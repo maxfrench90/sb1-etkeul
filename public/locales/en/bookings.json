@@ -1,0 +1,40 @@
+{
+  "bookings": {
+    "create": {
+      "title": "Book Service",
+      "selectDate": "Select Date",
+      "selectTime": "Select Time",
+      "serviceType": "Service Type",
+      "duration": "Duration",
+      "price": "Price",
+      "submit": "Confirm Booking",
+      "success": "Booking confirmed successfully!"
+    },
+    "list": {
+      "title": "Your Bookings",
+      "upcoming": "Upcoming",
+      "past": "Past",
+      "empty": "No bookings found",
+      "filter": {
+        "all": "All",
+        "confirmed": "Confirmed",
+        "pending": "Pending",
+        "completed": "Completed",
+        "cancelled": "Cancelled"
+      }
+    },
+    "details": {
+      "title": "Booking Details",
+      "provider": "Provider",
+      "client": "Client",
+      "date": "Date",
+      "time": "Time",
+      "status": "Status",
+      "actions": {
+        "cancel": "Cancel Booking",
+        "reschedule": "Reschedule",
+        "confirm": "Confirm Booking"
+      }
+    }
+  }
+}

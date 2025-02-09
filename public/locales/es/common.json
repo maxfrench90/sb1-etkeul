@@ -1,0 +1,43 @@
+{
+  "common": {
+    "loading": "Cargando...",
+    "error": "Se produjo un error",
+    "success": "¡Éxito!",
+    "cancel": "Cancelar",
+    "save": "Guardar",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "close": "Cerrar",
+    "back": "Atrás",
+    "next": "Siguiente",
+    "submit": "Enviar",
+    "required": "Obligatorio",
+    "optional": "Opcional",
+    "search": "Buscar",
+    "filter": "Filtrar",
+    "sort": "Ordenar",
+    "actions": "Acciones",
+    "status": {
+      "active": "Activo",
+      "inactive": "Inactivo",
+      "pending": "Pendiente",
+      "completed": "Completado",
+      "cancelled": "Cancelado"
+    },
+    "validation": {
+      "required": "Este campo es obligatorio",
+      "email": "Por favor ingrese un correo electrónico válido",
+      "minLength": "Debe tener al menos {{min}} caracteres",
+      "maxLength": "Debe tener menos de {{max}} caracteres",
+      "passwordMatch": "Las contraseñas deben coincidir"
+    },
+    "errors": {
+      "generic": "Algo salió mal",
+      "network": "Error de red. Por favor revise su conexión",
+      "unauthorized": "Por favor inicie sesión para continuar",
+      "forbidden": "No tiene permiso para acceder a esto",
+      "notFound": "No encontrado",
+      "validation": "Por favor revise su entrada"
+    }
+  }
+}

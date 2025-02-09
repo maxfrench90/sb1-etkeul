@@ -1,0 +1,50 @@
+name: Dependency Updates
+
+on:
+  schedule:
+    - cron: '0 0 * * 1' # Run weekly on Monday
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  update-dependencies:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm ci
+      
+      - name: Check for updates
+        run: npm outdated
+      
+      - name: Run security audit
+        run: npm audit
+      
+      - name: Update dependencies
+        run: |
+          npm update
+          npm audit fix
+      
+      - name: Run tests
+        run: npm test
+      
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v5
+        with:
+          commit-message: 'chore(deps): update dependencies'
+          title: 'chore(deps): update dependencies'
+          body: |
+            Automated dependency updates
+            
+            - Dependencies updated via `npm update`
+            - Security vulnerabilities fixed via `npm audit fix`
+            - All tests passing
+          branch: deps/update
+          base: main
+          labels: dependencies

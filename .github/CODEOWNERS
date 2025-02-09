@@ -1,0 +1,17 @@
+# Default owners for everything in the repo
+* @project-maintainers
+
+# Frontend code
+/src/ @frontend-team
+
+# Testing
+/src/__tests__/ @qa-team
+/e2e/ @qa-team
+
+# Infrastructure
+/.github/ @devops-team
+/scripts/ @devops-team
+
+# Documentation
+/docs/ @docs-team
+*.md @docs-team
